@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hedi – Privacy / Privacy Notice</title>
+<meta name="description" content="Informativa sulla privacy di Hedi / Hedi Privacy Notice">
+<style>
+  :root {
+    --bg: #fbf8f1; --text: #2b2924; --muted: #5f5b52; --line: #d9d2c0;
+    --accent: #7d5c00; --chip: #ffe7a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1c1b18; --text: #efeadd; --muted: #b3ad9d; --line: #3a372f; --accent: #ffd966; --chip: #3d3414; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 8px 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .4rem; }
+  p, li { margin: .5rem 0; }
+  ul { padding-left: 1.2rem; }
+  a { color: var(--accent); }
+  .lead { font-size: 1.05rem; padding: 12px 14px; border-left: 4px solid var(--accent); background: var(--chip); border-radius: 6px; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .switch { display: flex; gap: 8px; margin: 12px 0 8px; }
+  .switch button { font: inherit; color: var(--text); background: transparent; border: 1px solid var(--accent);
+                   border-radius: 999px; padding: 6px 16px; cursor: pointer; min-height: 40px; }
+  .switch button[aria-pressed="true"] { background: var(--chip); font-weight: 600; }
+  .js article[hidden] { display: none; }
+  article + article { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .js article + article { margin-top: 0; padding-top: 0; border-top: 0; }
+</style>
+</head>
+<body>
+<main>
+  <div class="switch" role="group" aria-label="Lingua / Language">
+    <button type="button" data-lang="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+
+  <article id="it" lang="it">
+    <h1>Informativa sulla privacy di Hedi</h1>
+    <p class="meta">Versione 1 · 11 ottobre 2026</p>
+    <p class="lead">Agenda, spese e memo restano sul tuo telefono: Hedi non li raccoglie e non li vende. L'unica cosa che esce dal telefono è la frase che scrivi a Hedi, e solo per essere interpretata.</p>
+
+    <h2>1. Chi è il titolare</h2>
+    <p>Il titolare del trattamento è Gianni Rosella. Per qualsiasi domanda o richiesta scrivi a <a href="mailto:giannirosella1@gmail.com">giannirosella1@gmail.com</a>.</p>
+
+    <h2>2. Cosa resta sul tuo telefono</h2>
+    <p>Appuntamenti, scadenze, promemoria, spese, entrate e memo sono salvati solo sul tuo dispositivo. Non ho un server che li riceve, non li vedo e non posso recuperarli. Se cambi telefono o disinstalli l'app, devi esportarli tu: io non ne ho una copia.</p>
+
+    <h2>3. Cosa esce dal telefono</h2>
+    <p>Quando scrivi una frase a Hedi (per esempio «domani alle 10 dal dentista»), l'app la invia, insieme alla data e all'ora di oggi, a un servizio di intelligenza artificiale che la interpreta: Claude, di Anthropic. Hedi propone, tu confermi: nulla viene salvato senza il tuo sì. L'intelligenza artificiale può sbagliare, quindi controlla sempre date e importi.</p>
+    <p>La frase passa da un servizio tecnico intermedio (Supabase, con server nell'Unione Europea), che custodisce la chiave del servizio e applica un limite di utilizzo. Questo servizio:</p>
+    <ul>
+      <li>non salva le tue frasi né le risposte;</li>
+      <li>conserva solo un identificatore tecnico anonimo e un contatore dei messaggi, per far rispettare il limite;</li>
+      <li>vede, come ogni servizio internet, l'indirizzo IP da cui arriva la richiesta, solo per il tempo necessario a rispondere.</li>
+    </ul>
+    <p>Anthropic tratta la frase per interpretarla e può farlo fuori dallo Spazio economico europeo, in particolare negli Stati Uniti. Secondo le sue regole per i servizi commerciali, input e output vengono cancellati dai suoi sistemi entro 30 giorni; se i suoi sistemi di sicurezza segnalano una frase, può conservarla più a lungo, fino a 2 anni, e può conservare più a lungo ciò che la legge richiede. Secondo le sue condizioni commerciali, Anthropic non usa i contenuti inviati tramite il servizio per addestrare i suoi modelli.</p>
+    <p>Non scrivere in Hedi dati che non vuoi inviare: numeri di carte, password, dati sanitari di altre persone.</p>
+
+    <h2>4. Cosa non facciamo</h2>
+    <ul>
+      <li>Non vendiamo né cediamo dati a nessuno.</li>
+      <li>Non facciamo pubblicità e non profiliamo.</li>
+      <li>Non conserviamo né leggiamo le tue frasi.</li>
+      <li>Non raccogliamo statistiche personali di utilizzo.</li>
+    </ul>
+
+    <h2>5. Il tuo consenso</h2>
+    <p>La base del trattamento è il tuo consenso, che ti viene chiesto alla prima apertura. Se non accetti, Hedi resta utilizzabile a mano: puoi inserire tutto con i moduli, ma senza l'interprete. Puoi cambiare idea in qualsiasi momento in Impostazioni, «Consenso e privacy»: da quel momento nessuna frase viene più inviata.</p>
+
+    <h2>6. File di diagnostica</h2>
+    <p>Durante la fase di prova, se attivi «Strumenti di prova» nelle Impostazioni, Hedi tiene sul telefono un registro tecnico che mi aiuta a migliorare l'app. Non viene mai inviato da solo: se scegli di mandarmelo, lo fai a mano e sai cosa contiene (comprese le frasi che hai scritto).</p>
+
+    <h2>7. I tuoi diritti</h2>
+    <p>Hai diritto di sapere come vengono trattati i tuoi dati, di chiederne l'accesso, la correzione o la cancellazione, di opporti e di revocare il consenso. Poiché io non conservo i tuoi dati, i dati dell'app li gestisci tu direttamente sul telefono. Per qualsiasi richiesta scrivimi. Hai anche il diritto di presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+    <h2>8. Minori</h2>
+    <p>Hedi non è pensata per i minori di 14 anni.</p>
+
+    <h2>9. Modifiche</h2>
+    <p>Se questa informativa cambia in un modo che riguarda come vengono trattati i tuoi dati, ti chiederemo di nuovo il consenso.</p>
+  </article>
+
+  <article id="en" lang="en">
+    <h1>Hedi Privacy Notice</h1>
+    <p class="meta">Version 1 · 11 October 2026</p>
+    <p class="lead">Appointments, expenses and notes stay on your phone: Hedi does not collect or sell them. The only thing that leaves your phone is the sentence you write to Hedi, and only so it can be interpreted.</p>
+
+    <h2>1. Who is responsible</h2>
+    <p>The data controller is Gianni Rosella. For any question or request, write to <a href="mailto:giannirosella1@gmail.com">giannirosella1@gmail.com</a>.</p>
+
+    <h2>2. What stays on your phone</h2>
+    <p>Appointments, deadlines, reminders, expenses, income and notes are stored only on your device. I have no server that receives them, I cannot see them and I cannot recover them. If you change phone or uninstall the app, you need to export them yourself: I do not hold a copy.</p>
+
+    <h2>3. What leaves your phone</h2>
+    <p>When you write a sentence to Hedi (for example "tomorrow at 10 dentist"), the app sends it, together with today's date and time, to an artificial intelligence service that interprets it: Claude, by Anthropic. Hedi suggests, you confirm: nothing is saved without your yes. The AI can make mistakes, so always double-check dates and amounts.</p>
+    <p>The sentence passes through a technical intermediary service (Supabase, with servers in the European Union), which holds the service key and enforces a usage limit. This service:</p>
+    <ul>
+      <li>does not store your sentences or the replies;</li>
+      <li>keeps only an anonymous technical identifier and a message counter, to enforce the limit;</li>
+      <li>sees, like any internet service, the IP address the request comes from, only for as long as it takes to answer.</li>
+    </ul>
+    <p>Anthropic processes the sentence to interpret it and may do so outside the European Economic Area, in particular in the United States. Under its rules for commercial services, inputs and outputs are deleted from its systems within 30 days; if its safety systems flag a sentence, it may keep it longer, up to 2 years, and it may keep longer what the law requires. Under its commercial terms, Anthropic does not use content sent through the service to train its models.</p>
+    <p>Do not write into Hedi anything you do not want to send: card numbers, passwords, other people's health data.</p>
+
+    <h2>4. What we do not do</h2>
+    <ul>
+      <li>We do not sell or share data with anyone.</li>
+      <li>We show no advertising and build no profiles.</li>
+      <li>We do not store or read your sentences.</li>
+      <li>We do not collect personal usage statistics.</li>
+    </ul>
+
+    <h2>5. Your consent</h2>
+    <p>The legal basis is your consent, requested the first time you open the app. If you decline, Hedi stays usable by hand: you can enter everything with the forms, without the interpreter. You can change your mind at any time in Settings, "Consent and privacy": from then on no sentence is sent.</p>
+
+    <h2>6. Diagnostic file</h2>
+    <p>During the testing phase, if you turn on "Test tools" in Settings, Hedi keeps a technical log on your phone that helps me improve the app. It is never sent on its own: if you choose to send it to me, you do so by hand and you know what it contains (including the sentences you wrote).</p>
+
+    <h2>7. Your rights</h2>
+    <p>You have the right to know how your data is processed, to request access, correction or deletion, to object, and to withdraw consent. Since I do not keep your data, you manage the app's data directly on your phone. For any request, write to me. You also have the right to lodge a complaint with your data protection authority (in Italy, the Garante per la protezione dei dati personali, <a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+    <h2>8. Minors</h2>
+    <p>Hedi is not intended for children under 14.</p>
+
+    <h2>9. Changes</h2>
+    <p>If this notice changes in a way that affects how your data is processed, we will ask for your consent again.</p>
+  </article>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
+    var arts = { it: document.getElementById('it'), en: document.getElementById('en') };
+    var btns = document.querySelectorAll('.switch button');
+    function show(lang) {
+      Object.keys(arts).forEach(function (k) { arts[k].hidden = (k !== lang); });
+      btns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      root.lang = lang;
+      try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var h = (location.hash || '').replace('#', '');
+    var nav = (navigator.language || 'it').slice(0, 2);
+    show(h === 'en' || h === 'it' ? h : (nav === 'it' ? 'it' : 'en'));
+  })();
+</script>
+</body>
+</html>
