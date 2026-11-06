@@ -43,22 +43,23 @@
 
   <article id="it" lang="it">
     <h1>Informativa sulla privacy di Hedi</h1>
-    <p class="meta">Versione 3 · 18 ottobre 2026</p>
-    <p class="lead">Agenda, spese e memo restano sul tuo telefono: Hedi non li raccoglie e non li vende. L'unica cosa che esce dal telefono è la frase che scrivi (o detti) a Hedi, e solo per essere interpretata.</p>
+    <p class="meta">Versione 4 · 6 novembre 2026</p>
+    <p class="lead">Agenda, spese e memo restano sul tuo telefono: Hedi non li raccoglie e non li vende. Per essere interpretata, parte dal telefono la frase che scrivi (o detti) a Hedi, insieme alla data e all'ora del telefono e a un codice casuale anonimo che serve solo a far rispettare i limiti di utilizzo.</p>
 
     <h2>1. Chi è il titolare</h2>
     <p>Il titolare del trattamento è Gianni Rosella. Per qualsiasi domanda o richiesta scrivi a <a href="mailto:giannirosella1@gmail.com">giannirosella1@gmail.com</a>.</p>
 
     <h2>2. Cosa resta sul tuo telefono</h2>
-    <p>Appuntamenti, scadenze, promemoria, spese, entrate e memo sono salvati solo sul tuo dispositivo. Non ho un server che li riceve, non li vedo e non posso recuperarli. Se cambi telefono o disinstalli l'app, devi esportarli tu: io non ne ho una copia.</p>
+    <p>Appuntamenti, scadenze, promemoria, spese, entrate e memo sono salvati sul tuo dispositivo. Non ho un server che li riceve, non li vedo e non posso recuperarli.</p>
+    <p>Se sul telefono hai attivato il backup automatico (iCloud su iPhone, Google su Android), i file dell'app possono essere copiati anche nel tuo account di backup e ripristinati su un nuovo telefono: è una funzione del tuo sistema, nel tuo account, e non passa da me. Se non hai il backup, quando cambi telefono o disinstalli l'app devi esportare i dati tu, dalle Impostazioni: io non ne ho una copia.</p>
 
     <h2>3. Cosa esce dal telefono</h2>
-    <p>Quando scrivi una frase a Hedi (per esempio «domani alle 10 dal dentista»), l'app la invia, insieme alla data e all'ora di oggi, a un servizio di intelligenza artificiale che la interpreta: Claude, di Anthropic. Hedi propone, tu confermi: nulla viene salvato senza il tuo sì. L'intelligenza artificiale può sbagliare, quindi controlla sempre date e importi.</p>
-    <p>La frase passa da un servizio tecnico intermedio (Supabase), che custodisce la chiave del servizio e applica un limite di utilizzo. Il suo database si trova nell'Unione Europea (Irlanda); il codice che inoltra la frase può essere eseguito su server vicini a te, anche fuori dall'Unione Europea. Questo servizio:</p>
+    <p>Quando scrivi una frase a Hedi (per esempio «domani alle 10 dal dentista»), l'app la invia a un servizio di intelligenza artificiale che la interpreta: Claude, di Anthropic. Insieme alla frase partono la data e l'ora del telefono (per capire «domani» o «venerdì»), le istruzioni fisse di Hedi e un codice casuale anonimo, creato sul telefono al primo avvio, che serve solo a far rispettare i limiti di utilizzo. Non partono il tuo nome, le voci che hai salvato, la tua posizione, gli identificativi del telefono né la lingua dell'app. Hedi propone, tu confermi: nulla viene salvato senza il tuo sì. L'intelligenza artificiale può sbagliare, quindi controlla sempre date e importi.</p>
+    <p>La frase passa da un servizio tecnico intermedio (Supabase), che custodisce la chiave del servizio e applica i limiti di utilizzo. Il suo database si trova nell'Unione Europea (Irlanda); il codice che inoltra la frase può essere eseguito su server vicini a te, anche fuori dall'Unione Europea. Questo servizio:</p>
     <ul>
       <li>non salva le tue frasi né le risposte;</li>
-      <li>conserva solo un identificatore tecnico anonimo, un contatore dei messaggi e il numero di token usati, per far rispettare il limite e capire i costi;</li>
-      <li>vede, come ogni servizio internet, l'indirizzo IP da cui arriva la richiesta, solo per il tempo necessario a rispondere.</li>
+      <li>conserva solo il codice anonimo con un contatore delle richieste per giorno (al massimo 60 giorni) e, per capire i costi, il numero di token usati per ogni richiesta, sempre legato al codice anonimo (al massimo 90 giorni);</li>
+      <li>riceve, come ogni servizio internet, l'indirizzo IP da cui arriva la richiesta, che serve per rispondere: Hedi non lo salva nelle proprie tabelle. I registri tecnici di rete del fornitore possono contenerlo per un periodo limitato, secondo le sue regole.</li>
     </ul>
     <p>Anthropic tratta la frase per interpretarla e può farlo fuori dallo Spazio economico europeo, in particolare negli Stati Uniti. Secondo le sue regole per i servizi commerciali, input e output vengono cancellati dai suoi sistemi entro 30 giorni; se i suoi sistemi di sicurezza segnalano una frase, può conservarla più a lungo, fino a 2 anni, e può conservare più a lungo ciò che la legge richiede. Secondo le sue condizioni commerciali, Anthropic non usa i contenuti inviati tramite il servizio per addestrare i suoi modelli.</p>
     <p>Non scrivere in Hedi dati che non vuoi inviare: numeri di carte, password, dati sanitari di altre persone.</p>
@@ -68,46 +69,54 @@
 
     <h2>4. Cosa non facciamo</h2>
     <ul>
-      <li>Non vendiamo né cediamo dati a nessuno.</li>
-      <li>Non facciamo pubblicità e non profiliamo.</li>
-      <li>Non conserviamo né leggiamo le tue frasi.</li>
-      <li>Non raccogliamo statistiche personali di utilizzo.</li>
+      <li>Non vendiamo i dati e non li condividiamo con altri per i loro scopi: li trattano solo Supabase e Anthropic, per far funzionare Hedi.</li>
+      <li>Non facciamo pubblicità e non profiliamo; l'app non contiene strumenti di analisi, pubblicità o rilevamento dei guasti di terzi.</li>
+      <li>Hedi non salva le tue frasi sul proprio server e non le legge.</li>
+      <li>Non raccogliamo statistiche sul tuo uso: il server conta soltanto quante richieste fa un codice anonimo e quanti token usano, per far rispettare i limiti e capire i costi.</li>
     </ul>
 
     <h2>5. Il tuo consenso</h2>
-    <p>La base del trattamento è il tuo consenso, che ti viene chiesto alla prima apertura. Hedi funziona solo con l'interprete, quindi senza il tuo consenso non può essere usata. Puoi revocarlo in qualsiasi momento in Impostazioni, «Consenso e privacy»: da quel momento nessuna frase viene più inviata, e i dati già salvati sul tuo telefono restano tuoi: puoi consultarli, esportarli e cancellarli.</p>
+    <p>La base del trattamento è il tuo consenso, che ti viene chiesto alla prima apertura. Hedi funziona solo con l'interprete, quindi senza il tuo consenso non può essere usata. Puoi revocarlo in qualsiasi momento in Impostazioni, «Consenso e privacy»: da quel momento nessuna frase viene più inviata. I dati già salvati sul tuo telefono restano tuoi: puoi consultarli, esportarli e cancellarli. Ciò che è già stato elaborato resta soggetto ai tempi di conservazione indicati qui sotto.</p>
 
-    <h2>6. File di diagnostica</h2>
-    <p>Durante la fase di prova, se attivi «Strumenti di prova» nelle Impostazioni, Hedi tiene sul telefono un registro tecnico che mi aiuta a migliorare l'app. Non viene mai inviato da solo: se scegli di mandarmelo, lo fai a mano e sai cosa contiene (comprese le frasi che hai scritto).</p>
+    <h2>6. Per quanto tempo si conservano i dati</h2>
+    <ul>
+      <li><strong>Sul tuo telefono:</strong> finché li tieni. In Impostazioni, «Cancella tutti i miei dati» elimina tutto ciò che hai registrato, il nome, le impostazioni, il consenso, lo sfondo e il codice anonimo.</li>
+      <li><strong>Su Supabase:</strong> il contatore giornaliero per codice anonimo, al massimo 60 giorni; i token usati per ogni richiesta, al massimo 90 giorni. La cancellazione è automatica.</li>
+      <li><strong>Presso Anthropic:</strong> come indicato nella sezione 3.</li>
+    </ul>
 
-    <h2>7. I tuoi diritti</h2>
-    <p>Hai diritto di sapere come vengono trattati i tuoi dati, di chiederne l'accesso, la correzione o la cancellazione, di opporti e di revocare il consenso. Poiché io non conservo i tuoi dati, i dati dell'app li gestisci tu direttamente sul telefono. Per qualsiasi richiesta scrivimi. Hai anche il diritto di presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+    <h2>7. File di diagnostica</h2>
+    <p>Le versioni distribuite negli store non creano registri di diagnostica. Nelle versioni di prova per sviluppatori, chi attiva «Strumenti di prova» in Impostazioni tiene sul telefono un registro tecnico che non viene mai inviato da solo: se scegli di mandarmelo, lo fai a mano e sai cosa contiene (comprese le frasi che hai scritto).</p>
 
-    <h2>8. Minori</h2>
+    <h2>8. I tuoi diritti</h2>
+    <p>Hai diritto di sapere come vengono trattati i tuoi dati, di chiederne l'accesso, la correzione o la cancellazione, di opporti, di revocare il consenso e di esportare i tuoi dati. I dati dell'app li gestisci tu direttamente sul telefono, e li esporti dalle Impostazioni. Sul server non ho il tuo nome né le tue voci: ho solo un codice casuale che non so collegare a te, e le righe collegate a quel codice si cancellano da sole entro i tempi indicati sopra. Per qualsiasi richiesta scrivimi. Hai anche il diritto di presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+    <h2>9. Minori</h2>
     <p>Hedi non è pensata per i minori di 14 anni.</p>
 
-    <h2>9. Modifiche</h2>
+    <h2>10. Modifiche</h2>
     <p>Se questa informativa cambia in un modo che riguarda come vengono trattati i tuoi dati, ti chiederemo di nuovo il consenso.</p>
   </article>
 
   <article id="en" lang="en">
     <h1>Hedi Privacy Notice</h1>
-    <p class="meta">Version 3 · 18 October 2026</p>
-    <p class="lead">Appointments, expenses and notes stay on your phone: Hedi does not collect or sell them. The only thing that leaves your phone is the sentence you write (or dictate) to Hedi, and only so it can be interpreted.</p>
+    <p class="meta">Version 4 · 6 November 2026</p>
+    <p class="lead">Appointments, expenses and notes stay on your phone: Hedi does not collect or sell them. So that it can be interpreted, the sentence you write (or dictate) to Hedi leaves your phone, together with the phone's date and time and a random anonymous code that is used only to enforce usage limits.</p>
 
     <h2>1. Who is responsible</h2>
     <p>The data controller is Gianni Rosella. For any question or request, write to <a href="mailto:giannirosella1@gmail.com">giannirosella1@gmail.com</a>.</p>
 
     <h2>2. What stays on your phone</h2>
-    <p>Appointments, deadlines, reminders, expenses, income and notes are stored only on your device. I have no server that receives them, I cannot see them and I cannot recover them. If you change phone or uninstall the app, you need to export them yourself: I do not hold a copy.</p>
+    <p>Appointments, deadlines, reminders, expenses, income and notes are stored on your device. I have no server that receives them, I cannot see them and I cannot recover them.</p>
+    <p>If you have turned on your phone's automatic backup (iCloud on iPhone, Google on Android), the app's files may also be copied to your backup account and restored on a new phone: this is a feature of your system, in your account, and it does not go through me. If you have no backup, when you change phone or uninstall the app you need to export your data yourself, from Settings: I do not hold a copy.</p>
 
     <h2>3. What leaves your phone</h2>
-    <p>When you write a sentence to Hedi (for example "tomorrow at 10 dentist"), the app sends it, together with today's date and time, to an artificial intelligence service that interprets it: Claude, by Anthropic. Hedi suggests, you confirm: nothing is saved without your yes. The AI can make mistakes, so always double-check dates and amounts.</p>
-    <p>The sentence passes through a technical intermediary service (Supabase), which holds the service key and enforces a usage limit. Its database is located in the European Union (Ireland); the code that forwards the sentence may run on servers close to you, including outside the European Union. This service:</p>
+    <p>When you write a sentence to Hedi (for example "tomorrow at 10 dentist"), the app sends it to an artificial intelligence service that interprets it: Claude, by Anthropic. Together with the sentence, the phone's date and time (to understand "tomorrow" or "Friday"), Hedi's fixed instructions and a random anonymous code, created on the phone at first launch and used only to enforce usage limits, are sent. Your name, the entries you have saved, your location, your phone's identifiers and the app's language are not sent. Hedi suggests, you confirm: nothing is saved without your yes. The AI can make mistakes, so always double-check dates and amounts.</p>
+    <p>The sentence passes through a technical intermediary service (Supabase), which holds the service key and enforces usage limits. Its database is located in the European Union (Ireland); the code that forwards the sentence may run on servers close to you, including outside the European Union. This service:</p>
     <ul>
       <li>does not store your sentences or the replies;</li>
-      <li>keeps only an anonymous technical identifier, a message counter and the number of tokens used, to enforce the limit and understand costs;</li>
-      <li>sees, like any internet service, the IP address the request comes from, only for as long as it takes to answer.</li>
+      <li>keeps only the anonymous code with a count of requests per day (at most 60 days) and, to understand costs, the number of tokens used for each request, always tied to the anonymous code (at most 90 days);</li>
+      <li>receives, like any internet service, the IP address the request comes from, which is needed to answer: Hedi does not store it in its own tables. The provider's technical network logs may contain it for a limited period, under its own rules.</li>
     </ul>
     <p>Anthropic processes the sentence to interpret it and may do so outside the European Economic Area, in particular in the United States. Under its rules for commercial services, inputs and outputs are deleted from its systems within 30 days; if its safety systems flag a sentence, it may keep it longer, up to 2 years, and it may keep longer what the law requires. Under its commercial terms, Anthropic does not use content sent through the service to train its models.</p>
     <p>Do not write into Hedi anything you do not want to send: card numbers, passwords, other people's health data.</p>
@@ -117,25 +126,32 @@
 
     <h2>4. What we do not do</h2>
     <ul>
-      <li>We do not sell or share data with anyone.</li>
-      <li>We show no advertising and build no profiles.</li>
-      <li>We do not store or read your sentences.</li>
-      <li>We do not collect personal usage statistics.</li>
+      <li>We do not sell the data and we do not share it with anyone for their own purposes: only Supabase and Anthropic process it, to make Hedi work.</li>
+      <li>We show no advertising and build no profiles; the app contains no third-party analytics, advertising or crash-reporting tools.</li>
+      <li>Hedi does not store your sentences on its own server and does not read them.</li>
+      <li>We do not collect statistics about how you use the app: the server only counts how many requests an anonymous code makes and how many tokens they use, to enforce the limits and understand costs.</li>
     </ul>
 
     <h2>5. Your consent</h2>
-    <p>The legal basis is your consent, requested the first time you open the app. Hedi works only with the interpreter, so it cannot be used without your consent. You can withdraw it at any time in Settings, "Consent and privacy": from then on no sentence is sent, and the data already saved on your phone stays yours: you can view, export and delete it.</p>
+    <p>The legal basis is your consent, requested the first time you open the app. Hedi works only with the interpreter, so it cannot be used without your consent. You can withdraw it at any time in Settings, "Consent and privacy": from then on no sentence is sent. The data already saved on your phone stays yours: you can view, export and delete it. What has already been processed remains subject to the retention periods set out below.</p>
 
-    <h2>6. Diagnostic file</h2>
-    <p>During the testing phase, if you turn on "Test tools" in Settings, Hedi keeps a technical log on your phone that helps me improve the app. It is never sent on its own: if you choose to send it to me, you do so by hand and you know what it contains (including the sentences you wrote).</p>
+    <h2>6. How long data is kept</h2>
+    <ul>
+      <li><strong>On your phone:</strong> for as long as you keep it. In Settings, "Erase all my data" removes everything you have recorded, your name, settings, consent, wallpaper and the anonymous code.</li>
+      <li><strong>On Supabase:</strong> the daily counter per anonymous code, at most 60 days; the tokens used for each request, at most 90 days. Deletion is automatic.</li>
+      <li><strong>At Anthropic:</strong> as described in section 3.</li>
+    </ul>
 
-    <h2>7. Your rights</h2>
-    <p>You have the right to know how your data is processed, to request access, correction or deletion, to object, and to withdraw consent. Since I do not keep your data, you manage the app's data directly on your phone. For any request, write to me. You also have the right to lodge a complaint with your data protection authority (in Italy, the Garante per la protezione dei dati personali, <a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+    <h2>7. Diagnostic file</h2>
+    <p>Versions distributed through the app stores do not create diagnostic logs. In developer test versions, if you turn on "Test tools" in Settings, Hedi keeps a technical log on your phone that is never sent on its own: if you choose to send it to me, you do so by hand and you know what it contains (including the sentences you wrote).</p>
 
-    <h2>8. Minors</h2>
+    <h2>8. Your rights</h2>
+    <p>You have the right to know how your data is processed, to request access, correction or deletion, to object, to withdraw consent and to export your data. You manage the app's data directly on your phone, and you export it from Settings. On the server I do not have your name or your entries: I only have a random code that I cannot link to you, and the rows tied to that code are deleted automatically within the periods stated above. For any request, write to me. You also have the right to lodge a complaint with your data protection authority (in Italy, the Garante per la protezione dei dati personali, <a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+    <h2>9. Minors</h2>
     <p>Hedi is not intended for children under 14.</p>
 
-    <h2>9. Changes</h2>
+    <h2>10. Changes</h2>
     <p>If this notice changes in a way that affects how your data is processed, we will ask for your consent again.</p>
   </article>
 </main>
